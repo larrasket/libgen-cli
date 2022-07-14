@@ -196,7 +196,7 @@ func getBooksdlDownloadURL(book *Book) error {
 	if downloadURL == nil {
 		return errors.New("no valid download Booksdl download URL found")
 	}
-	book.DownloadURL = string(downloadURL)
+	book.DownloadURL = fmt.Sprintf("https://libgen.rocks/%s", string(downloadURL))
 	fmt.Printf("%s", book.DownloadURL)
 
 	return nil
