@@ -17,7 +17,7 @@ package libgen
 import "time"
 
 const (
-	Version           = "v1.0.8"
+	Version           = "v1.0.9"
 	SearchHref        = "<a href='book/index.php.+</a>"
 	SearchMD5         = "[A-Z0-9]{32}"
 	booksdlReg        = `get\.php\?md5=\w{32}&key=\w{16}`
